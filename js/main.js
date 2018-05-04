@@ -15,7 +15,7 @@ $(document).ready(function(){
                 //Get code for current weather condition
                 var code = json.weather[0].id;
                 
-                $.getJSON('/weatherIcons.json', function(iconsJson){
+                $.getJSON('json/weatherIcons.json', function(iconsJson){
                     var prefix = 'wi wi-';
                     
                     //Lookup condition code in Icons JSON
